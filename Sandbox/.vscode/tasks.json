@@ -1,0 +1,19 @@
+{
+    "tasks": [
+        {
+            "label": "Build Debug",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "-g",
+                "-o",
+                "${workspaceFolder}/${fileBasenameNoExtension}",
+                "src/*.cpp"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

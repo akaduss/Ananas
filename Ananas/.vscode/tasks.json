@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Create bin directory",
+        "type": "shell",
+        "command": "mkdir",
+        "args": ["-p", "bin/Debug-${command:cpptools.activeConfigName}/${workspaceFolderBasename}"],
+        "problemMatcher": []
+      },
+      {
+        "label": "Build Dynamic Library",
+        "type": "shell",
+        "command": "clang++",
+        "args": [
+          "-shared",
+          "-fPIC",
+          "-o", "bin/Debug-${command:cpptools.activeConfigName}/${workspaceFolderBasename}/libtest.dylib",
+          "src/*.cpp"
+        ],
+        "dependsOn": ["Create bin directory"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"]
+      }
+    ]
+  }
+  
