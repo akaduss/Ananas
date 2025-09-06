@@ -149,6 +149,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Event.h" />
     <ClInclude Include="src\Ananas.h" />
     <ClInclude Include="src\Ananas\Application.h" />
     <ClInclude Include="src\Ananas\Core.h" />
