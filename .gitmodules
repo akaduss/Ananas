@@ -1,6 +1,3 @@
-[submodule "Hazel/vendor/spdlog"]
-	path = Hazel/vendor/spdlog
-	url = https://github.com/gabime/spdlog
 [submodule "Ananas/vendor/spdlog"]
 	path = Ananas/vendor/spdlog
 	url = https://github.com/gabime/spdlog
