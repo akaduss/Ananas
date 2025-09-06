@@ -7,5 +7,5 @@
 		#define ANANAS_API __declspec(dllimport)
 	#endif
 #else
-#error "Ananas only supports Windows!"
+	#error Ananas only supports Windows!
 #endif
